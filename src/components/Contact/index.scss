@@ -1,0 +1,166 @@
+
+.contact-content{
+   display: flex;
+   flex-direction: row;
+   
+
+}
+.services-wrapper{
+  min-height: 90vh;
+}
+.map-wrapper{
+  opacity: 0;
+ 
+   width: 60%;
+   min-height:calc(92vh - 70px);
+   animation: fadeIn 1s 1s;
+   animation-fill-mode: forwards;
+ 
+   
+}
+.contact-info{
+   width: 40%;
+  position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.leaflet-container{
+   width: 100%;
+   height: 100%;
+   position: relative;
+}
+.info-map{
+  
+  position: absolute;
+   background: #000;
+   top: 50px;
+    left: 50px;
+
+   width: 267px;
+   padding: 20px;
+   color: #fff;
+   font-family: 'Helvetica';
+   font-size: 17px;
+   font-weight: 300;
+  
+}
+.contact-square-t{
+   width: 30vh;
+   
+   flex-direction: column;
+  
+   background-color:#000;
+   display: flex;
+   margin: 5px;
+   height: fit-content;
+}
+
+.contact-form {
+   width: 90%;
+   margin-top: 20px;
+   margin-bottom: 30px;
+   ul {
+     padding: 0;
+     margin: 0;
+ 
+     li {
+       padding: 0;
+       margin: 0;
+       list-style: none;
+       margin-bottom: 15px;
+       opacity: 0;
+       overflow: hidden;
+       display: block;
+       clear: both;
+       position: relative;
+       animation: fadeInUp 1s 1s;
+       animation-fill-mode: forwards;
+     }
+     
+ 
+     li.half {
+       width: 49%;
+       margin-left: 2%;
+       float: left;
+       clear: none;
+ 
+       &:first-child {
+         margin-left: 0;
+       }
+     }
+   }
+ 
+   input[type='text'],
+   input[type='email'] {
+     width: 100%;
+     border: 0;
+     background: #efc52b;
+     height: 50px;
+     font-size: 16px;
+     color: black;
+     padding: 0 20px;
+     outline: none;
+     box-sizing: border-box;
+   }
+ 
+   textarea {
+     width: 100%;
+     border: 0;
+     background: #efc52b;
+     height: 50px;
+     font-size: 16px;
+     color: black;
+     padding: 20px;
+     box-sizing: border-box;
+     min-height: 150px;
+     outline: none;
+   }
+ 
+ 
+   .flat-button {
+     color: #efc52b;
+     font-size: 11px;
+     letter-spacing: 3px;
+     text-decoration: none;
+     padding: 8px 10px;
+     border: 1px solid #efc52b;
+     float: left;
+     border-radius: 4px;
+     background: 0 0;
+     text-transform: uppercase;
+     float: right;
+     text-align: center;
+     margin-right: 10px;
+   }
+ }
+
+ input:focus::placeholder {
+   color: transparent;
+ }
+ textarea:focus::placeholder{
+   color: transparent;
+
+ }
+ @media only screen and (max-width: 600px) {
+  .contact-content{
+    flex-direction: column;
+    
+  }
+  .map-wrapper{
+
+     border:#fff solid 10px;
+    
+  }
+  .leaflet-container{
+  position: absolute;
+  height: 600px;
+  width: 80%;
+ right: 10%;
+ left: 10%;
+  
+ }
+ .contact-info{
+  width: 100%;
+}
+ }

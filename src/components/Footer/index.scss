@@ -1,0 +1,22 @@
+footer{
+    background-color: #efc52b;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+   
+    width: 100%;
+    span{
+      margin: 10px;
+    }
+  }
+
+
+  .footer-logos{
+   margin: 5px;
+  }
+  .footer-logos>a>i{
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+  }
+
